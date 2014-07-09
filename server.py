@@ -67,7 +67,7 @@ class FBHandler(web.RequestHandler):
                 try:
                     worksheet.write(row,3,str(post['link']))
                 except Exception:
-                    worksheet.write(row,2,'error')
+                    worksheet.write(row,3,'error')
 
                 row += 1
 
